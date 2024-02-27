@@ -1,5 +1,10 @@
 const fs = require('fs');
 
+/**
+ * Counts the students in a CSV data file.
+ * @param {String} path to the CSV data file
+ */
+
 function countStudents(path) {
   try {
     const data = fs.readFileSync(path, 'utf8');
